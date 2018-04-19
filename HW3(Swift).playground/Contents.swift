@@ -78,8 +78,6 @@ decimalNumber = Float(integerNumber!)
 
 var pairOfValues = (integerNumber,decimalNumber)
 
-pairOfValues.0
-
 if (pairOfValues.0 != nil) {
     print(pairOfValues.0!)
 }
