@@ -30,14 +30,16 @@ let tupleOfTwelves:(Int8,String) = (12,"twelve")
 
 //TASK 3
 
+
 var thirdString = "Hello World. This is Swift programming language"
+let start = thirdString.startIndex
 
 print(thirdString.count)
 
 thirdString = thirdString.replacingOccurrences(of: "i", with: "u")
-thirdString.remove(at: thirdString.index(thirdString.startIndex, offsetBy: 3))
-thirdString.remove(at: thirdString.index(thirdString.startIndex, offsetBy: 6))
-thirdString.remove(at: thirdString.index(thirdString.startIndex, offsetBy: 9))
+thirdString.remove(at: thirdString.index(start, offsetBy: 3))
+thirdString.remove(at: thirdString.index(start, offsetBy: 6))
+thirdString.remove(at: thirdString.index(start, offsetBy: 9))
 
 thirdString += "(modified)"
 
@@ -49,16 +51,15 @@ thirdString.hasPrefix("Hello")
 
 thirdString.hasSuffix("world")
 
-thirdString.insert("-", at: thirdString.index(thirdString.startIndex, offsetBy: 9))
+thirdString.insert("-", at: thirdString.index(start, offsetBy: 9))
 
 thirdString = thirdString.replacingOccurrences(of: "Thus us", with: "It is")
 
-var tenthSymbol = thirdString[thirdString.index(thirdString.startIndex, offsetBy: 9)]
+var tenthSymbol = thirdString[thirdString.index(start, offsetBy: 9)]
 
-var fiftenthSymbol = thirdString[thirdString.index(thirdString.startIndex, offsetBy: 14)]
+var fiftenthSymbol = thirdString[thirdString.index(start, offsetBy: 14)]
 
-thirdString[thirdString.index(thirdString.startIndex,
-                              offsetBy: 9)..<thirdString.index(thirdString.startIndex, offsetBy: 15)]
+thirdString[thirdString.index(start,offsetBy: 9)..<thirdString.index(start, offsetBy: 15)]
 
 // TASK 4
 
@@ -79,15 +80,17 @@ var pairOfValues = (integerNumber,decimalNumber)
 
 pairOfValues.0
 
-if let decNum = pairOfValues.0 as? Int{
-    print(decNum)
-}
+//if (pairOfValues.0 is Int?) {
+//    print(pairOfValues.0)
+//}
+//
+// Не дуже зрозумів, чи саме це потрібно було з таски
+//
+//if (pairOfValues.1 is Float?) {
+//    print(pairOfValues.1)
+//}
 
-if let floatNum = pairOfValues.1 as? Float {
-    print(floatNum)
-}
-
-if let decNum = pairOfvalues.0 {
+if let decNum = pairOfValues.0 {
     print(decNum)
 }
 
