@@ -80,15 +80,15 @@ var pairOfValues = (integerNumber,decimalNumber)
 
 pairOfValues.0
 
-//if (pairOfValues.0 is Int?) {
-//    print(pairOfValues.0)
-//}
-//
-// Не дуже зрозумів, чи саме це потрібно було з таски
-//
-//if (pairOfValues.1 is Float?) {
-//    print(pairOfValues.1)
-//}
+if (pairOfValues.0 != nil) {
+    print(pairOfValues.0!)
+}
+
+// Не  зрозумів чи 8 та 9 завданні,саме це потрібно було зробити.
+
+if (pairOfValues.1 != nil) {
+    print(pairOfValues.1!)
+}
 
 if let decNum = pairOfValues.0 {
     print(decNum)
