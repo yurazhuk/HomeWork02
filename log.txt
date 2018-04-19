@@ -1,9 +1,0 @@
-commit be5e36f3606ef5ff0f8b8ecd055a710612c012ea (tag: tag1, origin/lesson2, origin/lesson1, lesson2, lesson1)
-Author: Yura <yurzhuk@icloud.com>
-Date:   Sun Apr 15 23:55:12 2018 +0300
-
-    initial commit
-
-commit cf1c811bf55451055c9f92bc655f644ac91f399d (HEAD -> master, origin/master)
-Author: yurazhuk <yurzhuk@icloud.com>
-Date:   Sun Apr 15 23:35:09 2018 +0300
