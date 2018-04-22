@@ -20,8 +20,7 @@ var fibArray:[Int] = getFibonacci(with: 10)
 
 var revArray = fibArray.reversed()
 
-var snglArray = [Int](repeatElement(1, count: 100))
-snglArray = snglArray.map{$0 * Int(arc4random_uniform(100)) }
+var snglArray = [Int](repeatElement(1, count: 100)).map{$0 * Int(arc4random_uniform(100)) }
 
 print(snglArray[10...15])
 
