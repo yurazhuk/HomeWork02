@@ -127,9 +127,9 @@ if let indexOf1 =  mNDict.index(forKey: 1),let indexOf7 = mNDict.index(forKey: 7
 print(mNDict.distance(from: indexOf1, to: indexOf7))
 }
 
-let mNDictKeys = mNDict.keys
+let mNDictKeys = Array(mNDict.keys)
 
-let mNDictValues = mNDict.values
+let mNDictValues = Array(mNDict.values)
 
 print(mNDict.count, mNDictKeys.count, mNDictValues.count)
 
