@@ -64,7 +64,7 @@ mChSet.insert("e")
 
 let srtChSet = mChSet.sorted
 
-print(mChSet.remove("f"))
+print(mChSet.remove("f") ?? "noValue")
 
 if mChSet.index(of: "d") != nil {
     mChSet.remove(at: mChSet.index(of: "d")!)
