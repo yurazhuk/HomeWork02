@@ -42,20 +42,49 @@ do {
 
 //TASK 2
 
+//Part 1
+
 class Operand {
     let number: Int
+    weak var operand: Operand?
     init(number: Int) {
         self.number = number
+        print("obj")
+    }
+    deinit {
+        print("dein")
     }
 }
-let ten = Operand(number: 10)
-let eleven = Operand(number: 11)
 
-let sum = {(obj1: Operand, obj2: Operand) -> Int in
+
+let SumClosure = {(obj1: Operand, obj2: Operand) -> Int in
     return obj1.number + obj2.number
 }
 
 
+do {
+    let ten = Operand(number: 10)
+    let eleven = Operand(number: 11)
+    ten.operand = eleven // retain cycle
+    eleven.operand = ten //
+    SumClosure(ten, eleven)
+}
 
-//sum(ten, eleven)
+//Part 2
 
+class OperandTwo {
+    let number : Int = 42
+    var clousure : (() -> ())? = nil
+    init() {
+        print("init")
+        clousure = { [weak self] in
+            print(self?.number as Any)
+        }
+    }
+    deinit {
+        print("deinit")
+    }
+}
+
+var operandTwo : OperandTwo? = OperandTwo()
+operandTwo = nil
