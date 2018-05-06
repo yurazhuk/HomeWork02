@@ -3,13 +3,12 @@ import UIKit
 // TASK 1
 
 func factorial(of num: Int) -> Int {
-    var result = 0
-    var temp = num
-    while (temp != 1) {
-        result += num
-        temp -= 1
+    if (num <= 1 ) {
+        print("cant get fac")
+        return num;
+    } else {
+        return num * factorial(of: num - 1);
     }
-    return result
 }
 
 factorial(of: 5)
@@ -92,23 +91,23 @@ func analyze(_ c: String) {
 
 analyze("ö")
 analyze("r")
-analyze("Н")
+analyze("k")
 
 //TASK 4
 
 
 func timesCharAppearInString(_ inputString: String) {
     
-    var result = [Character:Int]()
+    var result = [Character:Int]() 
     inputString.forEach({
-            result[$0] = result.keys.contains($0) ? result[$0]! + 1 : 1
+        result[$0] = result.keys.contains($0) ? result[$0]! + 1 : 1
     })
     
     print("\nChar : QNTY ")
-
-//    result.keys.forEach({
-//            print("  \($0)      \(result[i]!)")})
-//
+    
+    //    result.keys.forEach({
+    //            print("  \($0)      \(result[i]!)")})
+    //
     for i in result.keys {
         print("\(i)    | \(result[i]!)")
     }
@@ -122,14 +121,14 @@ timesCharAppearInString(testString)
 
 // TASK 6
 
-func getBigestCircleWhichContainPoint(_ arrayOfCircles:[(x:Double, y:Double, rad:Double)], _ point:(p1: Double, p2: Double)) -> (Double, Double, Double){
+func getBigestCircleWhichContainPoint(_ arrayOfCircles:[(x:Double, y:Double, r:Double)], _ point:(p1: Double, p2: Double)) -> (Double, Double, Double){
     
-    var maxCircle : (x: Double, y: Double, rad: Double) = (0.0,0.0,0.0)
-    let circleArray = arrayOfCircles.sorted(by: {$0.rad > $1.rad})
+    var maxCircle : (x: Double, y: Double, r: Double) = (0.0,0.0,0.0)
+    let circleArray = arrayOfCircles.sorted(by: {$0.r > $1.r})
     
     for i in circleArray {
-        if pow((point.p1-i.x),2) + pow((point.p2-i.y),2) <= pow(i.rad,2) {
-            maxCircle = (i.x,i.y,i.rad)
+        if pow((point.p1-i.x),2) + pow((point.p2-i.y),2) <= pow(i.r,2) {
+            maxCircle = (i.x,i.y,i.r)
             print("point: \(point) inside: \(maxCircle)")
             break
         }
@@ -140,3 +139,16 @@ func getBigestCircleWhichContainPoint(_ arrayOfCircles:[(x:Double, y:Double, rad
     return maxCircle
 }
 
+let p1 = (2.0, 3.0)
+let p2 = (32.0, 12.0)
+
+let arrayOfCircles = [
+    (x: 0.0, y: 0.0, r: 5.0),
+    (x: -1.0, y: -1.0, r: -1.0),
+    (x: 1.0, y: 1.0, r: 1.0),
+    (x: 2.5, y: -2.5, r: 5.0),
+    (x: -3.0, y: 3.0, r: 3.0)
+]
+
+getBigestCircleWhichContainPoint(arrayOfCircles, p1)
+getBigestCircleWhichContainPoint(arrayOfCircles, p2)
