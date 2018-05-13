@@ -18,6 +18,9 @@ enum FigureType {
 
 struct Figure {
     private var arrayOfPoints = [Point]()
+    var count: Int {
+    return arrayOfPoints.count
+    }
     
     var type: FigureType {
         switch arrayOfPoints.count {
@@ -45,6 +48,13 @@ struct Figure {
             arrayOfPoints.append($0)
         }
                   print(self.type)
+    }
+    
+    init(points: [Point]){
+        points.forEach {
+            arrayOfPoints.append($0)
+        }
+        print(self.type)
     }
     
 }

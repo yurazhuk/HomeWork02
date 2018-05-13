@@ -21,16 +21,10 @@ struct PolarCoordinates {
 
 extension Point {
     init(from structWithCC: CartesianCoordinates ) {
-        setfromCortesian(x: structWithCC.x, y: structWithCC.y)
-        
+        setFromCortesian(x: structWithCC.x, y: structWithCC.y)
     }
     
     init(from structWithPC: PolarCoordinates) {
-        print("kek")
-        
-        //        self.radius = structWithPC.radius
-        //        self.angle = structWithPC.angle
-        //        self.x = structWithPC.radius * cos(structWithPC.angle)
-        //        self.y = structWithPC.radius * sin(structWithPC.angle)
+        setFromPolar(radius: structWithPC.radius, angle: structWithPC.angle)
     }
 }

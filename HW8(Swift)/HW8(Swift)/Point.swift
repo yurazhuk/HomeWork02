@@ -27,9 +27,16 @@ struct Point {
     
     // setters
     
-    mutating func setfromCortesian(x: Double, y: Double){
+    mutating func setFromCortesian(x: Double, y: Double){
         self.x = x
         self.y = y
+        updatePolarCordinates()
+    }
+    
+    mutating func setFromPolar(radius: Double, angle: Double){
+        self.radius = radius
+        self.angle = angle
+        updateCortesianCordinates()
     }
     
     //inits
@@ -51,13 +58,13 @@ struct Point {
     
     // methods
     
-    mutating func updateCortesianCordinates() {
+    private mutating func updateCortesianCordinates() {
         
         self.x = radius * cos(angle)
         self.y = radius  * sin(angle)
     }
     
-    mutating func updatePolarCordinates() {
+    private mutating func updatePolarCordinates() {
         self.radius = sqrt(x*x  + y*y)
         self.angle = atan(y/x)
     }
