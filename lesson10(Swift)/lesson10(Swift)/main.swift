@@ -8,10 +8,28 @@
 
 import Foundation
 
+let calendar = Calendar.current
+let currentDate = Date()
 
-print("Hello, World!")
+print(currentDate)
 
 let DataBase = DB()
 
-let e1:Worker = Worker(name: "Kek", surname: "Cheburek", salary: 420, dayOfHiring: 3, monthOfHiring: 2, yearOfHiring: 1975)
-let e2: Worker = Worker(name: "Kek", surname: "Cheburek", salary: 420, dayOfHiring: 2, monthOfHiring: 2, yearOfHiring: 1975)
+var e1:Worker = Worker(name: "Kek", surname: "Cheburek", dayOfBirth: 3, monthOfBirth: 2, yearOfBirth: 1488)!
+var e2: Worker = Worker(name: "Kek", surname: "Cheburek", dayOfBirth: 2, monthOfBirth: 2, yearOfBirth: 1975)!
+
+
+do {
+try DataBase.hire(employee: &e2, day: 1, month: 5, year: 2018)
+} catch Desc.emploeeDidntBorn {
+    print("emploee didn`t born yet")
+} catch Desc.emploeeIsTooYoung {
+    print("emploee is too young")
+}
+print(e1.bazeSallary)
+DataBase.changeSallary(of: &e1, by: 10000)
+print(e1.bazeSallary)
+
+print(e2.position)
+
+print(e2.calculateSallaryForPeriod(from: e2.hiringDate!, to: currentDate))

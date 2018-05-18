@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03045EE120ADB760000E3FE6 /* DataRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03045EE020ADB760000E3FE6 /* DataRange.swift */; };
+		030E1C2A20AA053F00C59B15 /* Worker+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E1C2920AA053F00C59B15 /* Worker+Position.swift */; };
+		030E1C2C20AA0DF200C59B15 /* Shields+HourRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E1C2B20AA0DF200C59B15 /* Shields+HourRate.swift */; };
+		030E1C2E20AB3A9600C59B15 /* Worker+SallaryWithinPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E1C2D20AB3A9600C59B15 /* Worker+SallaryWithinPeriod.swift */; };
+		03866B1B20A983840090328E /* Worker+SallaryByExp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03866B1A20A983840090328E /* Worker+SallaryByExp.swift */; };
+		039D9A0E20A8705B00CCD36C /* Worker + Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D9A0D20A8705B00CCD36C /* Worker + Equatable.swift */; };
+		039D9A1020A8728D00CCD36C /* exceptionDescriptionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D9A0F20A8728D00CCD36C /* exceptionDescriptionEnum.swift */; };
+		039D9A1220A8825400CCD36C /* Shields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D9A1120A8825400CCD36C /* Shields.swift */; };
 		03D3E2E120A72D1D0012E37D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D3E2E020A72D1D0012E37D /* main.swift */; };
 		03D3E2E820A72D820012E37D /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D3E2E720A72D820012E37D /* Worker.swift */; };
 		03D3E2EA20A72FDE0012E37D /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D3E2E920A72FDE0012E37D /* DB.swift */; };
@@ -25,6 +33,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		03045EE020ADB760000E3FE6 /* DataRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRange.swift; sourceTree = "<group>"; };
+		030E1C2920AA053F00C59B15 /* Worker+Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Worker+Position.swift"; sourceTree = "<group>"; };
+		030E1C2B20AA0DF200C59B15 /* Shields+HourRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shields+HourRate.swift"; sourceTree = "<group>"; };
+		030E1C2D20AB3A9600C59B15 /* Worker+SallaryWithinPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Worker+SallaryWithinPeriod.swift"; sourceTree = "<group>"; };
+		03866B1A20A983840090328E /* Worker+SallaryByExp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Worker+SallaryByExp.swift"; sourceTree = "<group>"; };
+		039D9A0D20A8705B00CCD36C /* Worker + Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Worker + Equatable.swift"; sourceTree = "<group>"; };
+		039D9A0F20A8728D00CCD36C /* exceptionDescriptionEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exceptionDescriptionEnum.swift; sourceTree = "<group>"; };
+		039D9A1120A8825400CCD36C /* Shields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shields.swift; sourceTree = "<group>"; };
 		03D3E2DD20A72D1D0012E37D /* lesson10(Swift) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "lesson10(Swift)"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D3E2E020A72D1D0012E37D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		03D3E2E720A72D820012E37D /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
@@ -42,6 +58,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03045EE220ADE3FD000E3FE6 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				03D3E2E720A72D820012E37D /* Worker.swift */,
+				030E1C2920AA053F00C59B15 /* Worker+Position.swift */,
+				03866B1A20A983840090328E /* Worker+SallaryByExp.swift */,
+				039D9A0D20A8705B00CCD36C /* Worker + Equatable.swift */,
+				030E1C2D20AB3A9600C59B15 /* Worker+SallaryWithinPeriod.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		03045EE320ADE4B3000E3FE6 /* Shields */ = {
+			isa = PBXGroup;
+			children = (
+				039D9A1120A8825400CCD36C /* Shields.swift */,
+				030E1C2B20AA0DF200C59B15 /* Shields+HourRate.swift */,
+			);
+			path = Shields;
+			sourceTree = "<group>";
+		};
 		03D3E2D420A72D1D0012E37D = {
 			isa = PBXGroup;
 			children = (
@@ -62,8 +99,11 @@
 			isa = PBXGroup;
 			children = (
 				03D3E2E020A72D1D0012E37D /* main.swift */,
-				03D3E2E720A72D820012E37D /* Worker.swift */,
 				03D3E2E920A72FDE0012E37D /* DB.swift */,
+				03045EE220ADE3FD000E3FE6 /* Worker */,
+				03045EE320ADE4B3000E3FE6 /* Shields */,
+				039D9A0F20A8728D00CCD36C /* exceptionDescriptionEnum.swift */,
+				03045EE020ADB760000E3FE6 /* DataRange.swift */,
 			);
 			path = "lesson10(Swift)";
 			sourceTree = "<group>";
@@ -126,9 +166,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039D9A1220A8825400CCD36C /* Shields.swift in Sources */,
+				03045EE120ADB760000E3FE6 /* DataRange.swift in Sources */,
 				03D3E2E120A72D1D0012E37D /* main.swift in Sources */,
+				030E1C2A20AA053F00C59B15 /* Worker+Position.swift in Sources */,
+				030E1C2C20AA0DF200C59B15 /* Shields+HourRate.swift in Sources */,
+				039D9A1020A8728D00CCD36C /* exceptionDescriptionEnum.swift in Sources */,
 				03D3E2E820A72D820012E37D /* Worker.swift in Sources */,
 				03D3E2EA20A72FDE0012E37D /* DB.swift in Sources */,
+				03866B1B20A983840090328E /* Worker+SallaryByExp.swift in Sources */,
+				030E1C2E20AB3A9600C59B15 /* Worker+SallaryWithinPeriod.swift in Sources */,
+				039D9A0E20A8705B00CCD36C /* Worker + Equatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
