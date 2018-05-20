@@ -8,9 +8,9 @@
 
 import Foundation
 
-enum FigureType {
+enum FigureType: haveAsociatedValue {
     case unknown
     case line
-    case triangle
-    case Quadrilateral(type: Quadrilateral)
+    case triangle(type: Triangle)
+    case quadrilateral(type: Quadrilateral)
 }

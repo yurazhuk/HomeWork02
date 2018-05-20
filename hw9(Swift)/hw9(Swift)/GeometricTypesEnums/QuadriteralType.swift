@@ -8,9 +8,9 @@
 
 import Foundation
 
-enum Quadrilateral {
+enum Quadrilateral: haveAsociatedValue {
     case square
     case rectangle
-    case rhomb
-    case undef
+    case rhombus
+    case undefined
 }
