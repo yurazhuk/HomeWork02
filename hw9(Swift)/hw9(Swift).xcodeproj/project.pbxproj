@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0362887E20B1635D004EA7B2 /* Figure+Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362887D20B1635D004EA7B2 /* Figure+Area.swift */; };
 		0362888020B165A1004EA7B2 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362887F20B165A1004EA7B2 /* Point.swift */; };
 		0362888220B165F4004EA7B2 /* Figure + Perimetr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362888120B165F4004EA7B2 /* Figure + Perimetr.swift */; };
-		0362888420B197D8004EA7B2 /* TriangleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362888320B197D8004EA7B2 /* TriangleType.swift */; };
 		0362888820B1A154004EA7B2 /* helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362888720B1A154004EA7B2 /* helpers.swift */; };
+		0362888C20B1C27C004EA7B2 /* FigureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362888B20B1C27C004EA7B2 /* FigureType.swift */; };
+		0362888E20B1C2F7004EA7B2 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362888D20B1C2F7004EA7B2 /* Math.swift */; };
 		03FF16E520B15C77006864A6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF16E420B15C77006864A6 /* main.swift */; };
 		03FF16EC20B15CC3006864A6 /* Figure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF16EB20B15CC3006864A6 /* Figure.swift */; };
-		03FF16EE20B15E4D006864A6 /* FigureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF16ED20B15E4D006864A6 /* FigureType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,15 +29,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0362887D20B1635D004EA7B2 /* Figure+Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Figure+Area.swift"; sourceTree = "<group>"; };
 		0362887F20B165A1004EA7B2 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		0362888120B165F4004EA7B2 /* Figure + Perimetr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Figure + Perimetr.swift"; sourceTree = "<group>"; };
-		0362888320B197D8004EA7B2 /* TriangleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleType.swift; sourceTree = "<group>"; };
 		0362888720B1A154004EA7B2 /* helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpers.swift; sourceTree = "<group>"; };
+		0362888B20B1C27C004EA7B2 /* FigureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FigureType.swift; sourceTree = "<group>"; };
+		0362888D20B1C2F7004EA7B2 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		03FF16E120B15C77006864A6 /* hw9(Swift) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "hw9(Swift)"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FF16E420B15C77006864A6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		03FF16EB20B15CC3006864A6 /* Figure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Figure.swift; sourceTree = "<group>"; };
-		03FF16ED20B15E4D006864A6 /* FigureType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigureType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +53,7 @@
 		0362888520B197DF004EA7B2 /* GeometricTypesEnums */ = {
 			isa = PBXGroup;
 			children = (
-				03FF16ED20B15E4D006864A6 /* FigureType.swift */,
-				0362888320B197D8004EA7B2 /* TriangleType.swift */,
+				0362888B20B1C27C004EA7B2 /* FigureType.swift */,
 			);
 			path = GeometricTypesEnums;
 			sourceTree = "<group>";
@@ -65,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				03FF16EB20B15CC3006864A6 /* Figure.swift */,
-				0362887D20B1635D004EA7B2 /* Figure+Area.swift */,
 				0362888120B165F4004EA7B2 /* Figure + Perimetr.swift */,
 			);
 			path = Figure;
@@ -91,10 +87,11 @@
 			isa = PBXGroup;
 			children = (
 				03FF16E420B15C77006864A6 /* main.swift */,
-				0362888520B197DF004EA7B2 /* GeometricTypesEnums */,
 				0362888620B19819004EA7B2 /* Figure */,
+				0362888520B197DF004EA7B2 /* GeometricTypesEnums */,
 				0362887F20B165A1004EA7B2 /* Point.swift */,
 				0362888720B1A154004EA7B2 /* helpers.swift */,
+				0362888D20B1C2F7004EA7B2 /* Math.swift */,
 			);
 			path = "hw9(Swift)";
 			sourceTree = "<group>";
@@ -158,12 +155,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				03FF16E520B15C77006864A6 /* main.swift in Sources */,
-				0362887E20B1635D004EA7B2 /* Figure+Area.swift in Sources */,
 				0362888220B165F4004EA7B2 /* Figure + Perimetr.swift in Sources */,
 				0362888020B165A1004EA7B2 /* Point.swift in Sources */,
-				03FF16EE20B15E4D006864A6 /* FigureType.swift in Sources */,
-				0362888420B197D8004EA7B2 /* TriangleType.swift in Sources */,
+				0362888E20B1C2F7004EA7B2 /* Math.swift in Sources */,
 				03FF16EC20B15CC3006864A6 /* Figure.swift in Sources */,
+				0362888C20B1C27C004EA7B2 /* FigureType.swift in Sources */,
 				0362888820B1A154004EA7B2 /* helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,7 +2,7 @@
 //  Figure.swift
 //  hw9(Swift)
 //
-//  Created by yurii zhuk on 5/20/18.
+//  Created by yurii zhuk on 5/18/18.
 //  Copyright © 2018 yurii zhuk. All rights reserved.
 //
 
@@ -12,16 +12,16 @@ class Figure {
     private(set) var points = [Point]()
     
     
-    var type : FigureType {
+    var type : FigureType{
          get {
             switch points.count {
             case 2:
                 return .line
             case 3:
-//                return .triangle
-                return .line
+            let result = resolveTriangle(points: points)
+                return .triangle(result.1,result.0)
             case 4:
-                return .
+                return .quadrilateral(QuadrangleShape.rectangle)
             default:
                 return .unknown
             }
