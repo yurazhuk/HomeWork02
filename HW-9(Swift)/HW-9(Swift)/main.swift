@@ -41,3 +41,4 @@ print("Max perim is \(math.maxPerim.0) of figure \(math.maxPerim.1)")
 print("Min perim is \(math.minPerim.0) of figure \(math.minPerim.1)")
 
 
+
