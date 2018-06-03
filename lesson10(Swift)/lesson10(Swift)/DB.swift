@@ -13,16 +13,17 @@ class DB {
     
     func hire(employee: inout Worker, day: Int, month: Int, year: Int) throws {
         let expectedHiringDate = calendar.date(from: DateComponents(year: year,
-                                                                    month: month,
-                                                                    day: day))
+                           month: month,
+                           day: day))
         
         if expectedHiringDate! <= employee.birthDay {
             throw Desc.emploeeDidntBorn
-        } else if (calendar.date(byAdding: .year,
-                                 value: -18,
-                                 to: expectedHiringDate!)! <= employee.birthDay) {
+            
+        } else if (calendar.date(byAdding: .year, value: -18, to: expectedHiringDate!)! <= employee.birthDay) {
+            
             throw Desc.emploeeIsTooYoung
-            } else {
+            
+        } else {
             workers.append(employee)
             employee.hiringDate = expectedHiringDate
         }

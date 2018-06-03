@@ -30,9 +30,7 @@ struct DateRange: Sequence {
                                                     return nil
             }
             
-            let orderedType: ComparisonResult = self.step > 0 ?
-                .orderedDescending :
-                .orderedAscending
+            let orderedType: ComparisonResult = self.step > 0 ? .orderedDescending : .orderedAscending
             if let last = self.endDate, next.compare(last) == orderedType {
                 return nil
             }
