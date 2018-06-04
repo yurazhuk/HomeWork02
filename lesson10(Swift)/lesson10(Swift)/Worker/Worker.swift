@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Worker {
+final class Worker {
     
     let name: String
     let surname: String

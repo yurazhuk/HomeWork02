@@ -8,20 +8,20 @@
 
 import Foundation
 
-class DB {
+final class DB {
     var workers = [Worker]()
     
-    func hire(employee: inout Worker, day: Int, month: Int, year: Int) throws {
+    func hire(employee: Worker, day: Int, month: Int, year: Int) throws {
         let expectedHiringDate = calendar.date(from: DateComponents(year: year,
                            month: month,
                            day: day))
         
         if expectedHiringDate! <= employee.birthDay {
-            throw Desc.emploeeDidntBorn
+            throw EmployeeBirthDateCheck.emploeeDidntBorn
             
         } else if (calendar.date(byAdding: .year, value: -18, to: expectedHiringDate!)! <= employee.birthDay) {
             
-            throw Desc.emploeeIsTooYoung
+            throw EmployeeBirthDateCheck.emploeeIsTooYoung
             
         } else {
             workers.append(employee)

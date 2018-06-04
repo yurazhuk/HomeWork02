@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Desc:Error {
+enum EmployeeBirthDateCheck:Error {
     case emploeeDidntBorn
     case emploeeIsTooYoung
 }
