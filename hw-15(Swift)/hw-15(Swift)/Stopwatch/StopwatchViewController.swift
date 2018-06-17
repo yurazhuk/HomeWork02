@@ -99,12 +99,8 @@ class StopwatchViewController: UIViewController, UITableViewDelegate {
             minutes += 1
             seconds = 0
         }
-        
-        let fractionString = fractions > 9 ? "\(fractions)" : "0\(fractions)"
-        let secondsString = seconds > 9 ? "\(seconds)" : "0\(seconds)"
-        let minutesString = minutes > 9 ? "\(minutes)" : "0\(minutes)"
-        
-        stopwatchLabel.text = "\(minutesString):\(secondsString):\(fractionString)"
+
+        stopwatchLabel.text =  String.countdownStringFormater(minutes, seconds, fractions)
     }
     
 }

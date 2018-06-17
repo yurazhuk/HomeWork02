@@ -318,46 +318,51 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="2Bo-FN-m3s">
-                                <rect key="frame" x="39.5" y="366" width="296" height="88"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3J-XM-wss">
-                                        <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
-                                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="h3J-XM-wss" secondAttribute="height" multiplier="1:1" id="g9v-xi-lpX"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJ2-wG-flg">
-                                        <rect key="frame" x="208" y="0.0" width="88" height="88"/>
-                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="lJ2-wG-flg" secondAttribute="height" multiplier="1:1" id="iwe-8h-Pvd"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="launchTimer:" destination="kAR-cW-5I0" eventType="touchUpInside" id="GNt-cU-pVu"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJ2-wG-flg">
+                                <rect key="frame" x="271" y="365" width="88" height="88"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lJ2-wG-flg" secondAttribute="height" multiplier="1:1" id="iwe-8h-Pvd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="launchTimer:" destination="kAR-cW-5I0" eventType="touchUpInside" id="GNt-cU-pVu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3J-XM-wss">
+                                <rect key="frame" x="16" y="365" width="88" height="88"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="SKV-L7-rzO"/>
+                                    <constraint firstAttribute="width" secondItem="h3J-XM-wss" secondAttribute="height" multiplier="1:1" id="g9v-xi-lpX"/>
+                                </constraints>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelAction:" destination="kAR-cW-5I0" eventType="touchUpInside" id="taa-yT-CKV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MAl-uk-kTn" firstAttribute="trailing" secondItem="E3t-E2-cet" secondAttribute="trailing" id="KQI-NX-ilI"/>
                             <constraint firstItem="MAl-uk-kTn" firstAttribute="top" secondItem="BXK-G8-hXi" secondAttribute="top" constant="66" id="Le7-J1-9J8"/>
                             <constraint firstAttribute="trailing" secondItem="MAl-uk-kTn" secondAttribute="trailing" id="OJP-6V-CvN"/>
-                            <constraint firstItem="2Bo-FN-m3s" firstAttribute="top" secondItem="E3t-E2-cet" secondAttribute="bottom" constant="150" id="QPo-s5-3Jo"/>
-                            <constraint firstItem="BXK-G8-hXi" firstAttribute="bottom" secondItem="2Bo-FN-m3s" secondAttribute="bottom" constant="100" id="d0i-wU-zIg"/>
+                            <constraint firstAttribute="bottom" secondItem="h3J-XM-wss" secondAttribute="bottom" constant="101" id="Udl-tS-4ch"/>
+                            <constraint firstItem="lJ2-wG-flg" firstAttribute="trailing" secondItem="hMq-RP-LSp" secondAttribute="trailingMargin" id="eZC-SV-m3D"/>
                             <constraint firstItem="MAl-uk-kTn" firstAttribute="centerY" secondItem="E3t-E2-cet" secondAttribute="centerY" id="etS-mP-9VP"/>
-                            <constraint firstItem="2Bo-FN-m3s" firstAttribute="centerX" secondItem="hMq-RP-LSp" secondAttribute="centerX" id="hC2-F7-pCQ"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="h3J-XM-wss" secondAttribute="trailingMargin" id="gAp-Du-F0P"/>
                             <constraint firstItem="MAl-uk-kTn" firstAttribute="leading" secondItem="hMq-RP-LSp" secondAttribute="leading" id="hTG-fZ-uv8"/>
+                            <constraint firstItem="lJ2-wG-flg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hMq-RP-LSp" secondAttribute="leadingMargin" id="kza-Au-v55"/>
+                            <constraint firstItem="h3J-XM-wss" firstAttribute="top" secondItem="lJ2-wG-flg" secondAttribute="top" id="nlw-5k-4J9"/>
+                            <constraint firstItem="h3J-XM-wss" firstAttribute="baseline" secondItem="lJ2-wG-flg" secondAttribute="firstBaseline" id="opj-Ci-TWp"/>
+                            <constraint firstItem="E3t-E2-cet" firstAttribute="leading" secondItem="BXK-G8-hXi" secondAttribute="leading" constant="55" id="rDI-aq-Eam"/>
+                            <constraint firstItem="h3J-XM-wss" firstAttribute="leading" secondItem="hMq-RP-LSp" secondAttribute="leadingMargin" id="taf-T9-jW3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BXK-G8-hXi"/>
                     </view>
                     <navigationItem key="navigationItem" title="Timer" id="lbV-op-R6k"/>
                     <connections>
+                        <outlet property="cancelButton" destination="h3J-XM-wss" id="vwR-Qr-C37"/>
                         <outlet property="countDownLabel" destination="MAl-uk-kTn" id="036-QM-yl7"/>
                         <outlet property="launchTimer" destination="lJ2-wG-flg" id="fXy-xQ-n4W"/>
                         <outlet property="timePicker" destination="E3t-E2-cet" id="nJu-hF-SY6"/>

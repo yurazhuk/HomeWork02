@@ -21,6 +21,8 @@
 		031FF74620D5610900E624F8 /* StopwatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031FF74520D5610900E624F8 /* StopwatchTableViewCell.swift */; };
 		031FF74B20D57A6800E624F8 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031FF74A20D57A6800E624F8 /* TimerViewController.swift */; };
 		031FF74D20D5C28C00E624F8 /* PickerView + PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031FF74C20D5C28C00E624F8 /* PickerView + PickerView.swift */; };
+		0354BCBC20D670000018C410 /* String + CountdownStringFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354BCBB20D670000018C410 /* String + CountdownStringFormater.swift */; };
+		0354BCBE20D690380018C410 /* TimerPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354BCBD20D690380018C410 /* TimerPickerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		031FF74520D5610900E624F8 /* StopwatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchTableViewCell.swift; sourceTree = "<group>"; };
 		031FF74A20D57A6800E624F8 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		031FF74C20D5C28C00E624F8 /* PickerView + PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PickerView + PickerView.swift"; sourceTree = "<group>"; };
+		0354BCBB20D670000018C410 /* String + CountdownStringFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + CountdownStringFormater.swift"; sourceTree = "<group>"; };
+		0354BCBD20D690380018C410 /* TimerPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPickerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 				031FF74220D440DE00E624F8 /* Alarm */,
 				031FF74920D579BE00E624F8 /* Stopwatch */,
 				031FF74A20D57A6800E624F8 /* TimerViewController.swift */,
+				0354BCBD20D690380018C410 /* TimerPickerController.swift */,
 				031FF70A20D3D1ED00E624F8 /* Main.storyboard */,
 				031FF71820D3D6BA00E624F8 /* ClockView.swift */,
 				031FF74120D43D1800E624F8 /* Extensions */,
@@ -99,6 +104,7 @@
 		031FF74120D43D1800E624F8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0354BCBB20D670000018C410 /* String + CountdownStringFormater.swift */,
 				031FF73F20D43CE700E624F8 /* AtributedString + DateStringFormater.swift */,
 				031FF74C20D5C28C00E624F8 /* PickerView + PickerView.swift */,
 			);
@@ -201,11 +207,13 @@
 				031FF74620D5610900E624F8 /* StopwatchTableViewCell.swift in Sources */,
 				031FF71D20D3FF5400E624F8 /* WorldClockTableViewCell.swift in Sources */,
 				031FF71920D3D6BA00E624F8 /* ClockView.swift in Sources */,
+				0354BCBE20D690380018C410 /* TimerPickerController.swift in Sources */,
 				031FF70520D3D1ED00E624F8 /* AppDelegate.swift in Sources */,
 				031FF74420D462AA00E624F8 /* StopwatchViewController.swift in Sources */,
 				031FF70720D3D1ED00E624F8 /* WorldClockViewController.swift in Sources */,
 				031FF74020D43CE700E624F8 /* AtributedString + DateStringFormater.swift in Sources */,
 				031FF73E20D42A0500E624F8 /* AlarmTableViewCell.swift in Sources */,
+				0354BCBC20D670000018C410 /* String + CountdownStringFormater.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
